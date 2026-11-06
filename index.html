@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="Practise original JAMB-style questions in Mathematics, English, Chemistry, Physics and Biology.">
+  <title>JAMB Practice — Study smarter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="JAMB Practice home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span>jamb<span class="brand-light">practice</span></span>
+      </a>
+      <div class="sidebar-label">YOUR STUDY SPACE</div>
+      <nav class="subject-nav" id="subject-nav" aria-label="Choose a subject"></nav>
+      <div class="sidebar-bottom">
+        <div class="tip-card">
+          <span class="tip-icon" aria-hidden="true">✦</span>
+          <p class="tip-title">Little by little</p>
+          <p class="tip-copy">A few focused questions every day add up.</p>
+        </div>
+        <p class="sidebar-foot">Made for your next big step.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">Study room <span>/</span> <strong id="breadcrumb-subject">Mathematics</strong></div>
+        <div class="edition-picker">
+          <label for="year-select">PRACTICE EDITION</label>
+          <select id="year-select" aria-label="Choose a practice edition"></select>
+        </div>
+      </header>
+
+      <section class="welcome-row">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR JAMB PREP, MADE SIMPLE</div>
+          <h1>Small steps.<br><span class="heading-accent">Big results.</span></h1>
+          <p class="welcome-copy">Build confidence one question at a time. Pick a subject and get started.</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <div class="art-sun"></div><div class="art-book">✎</div>
+          <div class="art-star star-one">✳</div><div class="art-star star-two">✦</div>
+          <div class="art-caption">YOU'VE GOT THIS</div>
+        </div>
+      </section>
+
+      <section class="subject-section" aria-labelledby="subject-heading">
+        <div class="section-heading">
+          <div><p class="section-kicker">CHOOSE YOUR FOCUS</p><h2 id="subject-heading">What are we studying?</h2></div>
+          <span class="section-note">5 subjects <span aria-hidden="true">·</span> one goal</span>
+        </div>
+        <div class="subject-grid" id="subject-grid"></div>
+      </section>
+
+      <section class="practice-layout" aria-label="Practice questions">
+        <div class="quiz-card" id="quiz-card"></div>
+        <aside class="syllabus-card">
+          <div class="syllabus-heading">
+            <div class="syllabus-icon" aria-hidden="true">☷</div>
+            <div><p class="section-kicker">STAY ON TRACK</p><h2 id="syllabus-title">Mathematics syllabus</h2></div>
+          </div>
+          <p class="syllabus-intro">Key areas covered in the JAMB syllabus:</p>
+          <ul class="topic-list" id="topic-list"></ul>
+          <div class="syllabus-note"><span aria-hidden="true">↗</span> Questions are drawn from these core areas.</div>
+        </aside>
+      </section>
+      <footer class="page-footer">
+        <span>Keep going — every question is progress.</span>
+        <span class="footer-disclaimer">Original practice questions, not official past papers. The selected year labels your edition; questions are shared across years.</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
